@@ -41,5 +41,6 @@ clean:
 
 fclean:	clean
 	rm -f /sys/fs/bpf/$(BPF_FILE)
+	rm -f /sys/fs/bpf/syscall_counter
 
 re: fclean all

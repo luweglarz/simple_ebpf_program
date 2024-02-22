@@ -8,6 +8,7 @@ struct {
 	 __type(key, sizeof(__u64));
 	 __type(value, sizeof(__u64));
      __uint(max_entries, 10000);
+	 __uint(pinning, LIBBPF_PIN_BY_NAME);
 } syscall_counter SEC(".maps");
 
 
